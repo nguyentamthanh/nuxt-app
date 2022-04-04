@@ -233,6 +233,7 @@ export default {
       const container = canvas.parentNode //Thay doi kich thuoc phan tu canvas phu hop voi bien cha
       let parent_pos = container.getBoundingClientRect() // cung cap thong tin kic thuoc phan tu trong 1 khung hinh
       canvas.width = parent_pos.right - parent_pos.left // tinh chieu dai va chieu cao cua canvas
+
       canvas.height = parent_pos.bottom - parent_pos.top
       ctx.clearRect(0, 0, canvas.width, canvas.height) //dat kich thuoc hinh chu nhat mau den trong suot
       for (let index = 0; index < this.connected_list.length; index++) {
