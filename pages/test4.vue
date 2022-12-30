@@ -126,6 +126,7 @@ export default {
           this.list1 = res?.data.answer.filter((x) => x.group === 1)
           this.list2 = res?.data.answer.filter((x) => x.group === 2)
         })
+        .catch((err) => console.log(err))
     },
     putData(id) {
       axios({
